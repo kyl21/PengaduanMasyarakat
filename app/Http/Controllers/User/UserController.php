@@ -37,7 +37,7 @@ class UserController extends Controller
         }
 
         if (Auth::guard('masyarakat')->attempt(['username' => $request->username, 'password' => $request->password])) {
-            return redirect()->back();
+            return redirect()->to('/');
         } else {
             return redirect()->back()->with(['pesan' => 'Akun tidak terdaftar!']);
         }
@@ -143,4 +143,6 @@ class UserController extends Controller
             return view('ucser.laporan', ['pengaduan' => $pengaduan, 'hitung' => $hitung, 'siapa' => $siapa]);
         }
     }
+
+    
 }

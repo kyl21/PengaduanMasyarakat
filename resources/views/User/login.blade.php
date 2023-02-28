@@ -32,23 +32,23 @@
                                         @csrf
                                         <div class="form-group">
                                             <label>Nama</label>
-                                            <input type="NIK" class="form-control form-control-user"
+                                            <input type="text" name="nama" class="form-control form-control-user"
                                                 placeholder="Nama">
                                         </div>
                                         <div class="form-group">
                                             <label>Username</label>
-                                            <input type="NIK" class="form-control form-control-user"
+                                            <input type="text" name="username" class="form-control form-control-user"
                                                 placeholder="Username">
                                         </div>
                                         <div class="form-group">
                                             <label>Passwod</label>
-                                            <input type="NIK" class="form-control form-control-user"
+                                            <input type="password" name="password" class="form-control form-control-user"
                                                 placeholder="Password">
                                         </div>
                                         <br>
-                                        <a href="{{route('pekat.index')}}" class="btn bg-danger text-white btn-user btn-block">
+                                        <button href="{{route('pekat.index')}}" class="btn bg-danger text-white btn-user btn-block">
                                             Masuk
-                                        </a>
+                                        </button>
 
 
                                     </form>

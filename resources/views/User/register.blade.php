@@ -32,27 +32,27 @@
                                         @csrf
                                         <div class="form-group">
                                             <label>NIK</label>
-                                            <input type="NIK" class="form-control form-control-user"
+                                            <input type="text" name="nik" class="form-control form-control-user"
                                                 placeholder="Masukan NIK Anda">
                                         </div>
                                         <div class="form-group">
                                             <label>Nama</label>
-                                            <input type="NIK" class="form-control form-control-user"
+                                            <input type="text" name="nama"class="form-control form-control-user"
                                                 placeholder="Nama">
                                         </div>
                                         <div class="form-group">
                                             <label>Username</label>
-                                            <input type="NIK" class="form-control form-control-user"
+                                            <input type="text" name="username" class="form-control form-control-user"
                                                 placeholder="Username">
                                         </div>
                                         <div class="form-group">
                                             <label>Passwod</label>
-                                            <input type="NIK" class="form-control form-control-user"
+                                            <input type="password" name="password" class="form-control form-control-user"
                                                 placeholder="Password">
                                         </div>
                                         <div class="form-group">
                                             <label>No. Telp</label>
-                                            <input type="NIK" class="form-control form-control-user"
+                                            <input type="text" name="telp" class="form-control form-control-user"
                                                 placeholder="No. Telp">
                                         </div>
 
@@ -61,9 +61,9 @@
 
                                         </div>
                                         <br>
-                                        <a href="{{route('pekat.index')}}" class="btn bg-danger text-white btn-user btn-block">
+                                        <button class="btn bg-danger text-white btn-user btn-block">
                                             Submit
-                                        </a>
+                                        </button>
                                     </form>
                                 </div>
                             </div>
